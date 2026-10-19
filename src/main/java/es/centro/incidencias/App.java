@@ -4,12 +4,17 @@ import java.util.Arrays;
 import java.util.List;
 import java.util.Scanner;
 
-
+/**
+ * Punto de entrada para el gestor de incidencias
+ */
 public final class App {
 
     private App() {
     }
 
+    /**
+     * Iniciador del menu
+     */
     public static void main(String[] args) {
         GestorIncidencias gestor = new GestorIncidencias();
 
