@@ -6,7 +6,8 @@ package es.centro.incidencias;
 public class IncidenciaNoEncontradaException extends Exception {
     /**
      * Crea una incidencia personalizada con el id pasado
-     * @param id con el que se quiere personalizar
+     *
+     * @param id Para la personalización del {@code Exception}
      */
     public IncidenciaNoEncontradaException(String id) {
         super("No existe ninguna incidencia con el identificador " + id + ".");

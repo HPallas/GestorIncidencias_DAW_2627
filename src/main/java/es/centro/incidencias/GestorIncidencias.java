@@ -26,7 +26,7 @@ public final class GestorIncidencias {
 
     /**
      * Metodo que devuelve la lista de incidencias
-     * @return todas las incidencias
+     * @return Todas las incidencias
      */
     public List<Incidencia> listar() {
         return incidencias;
@@ -35,7 +35,7 @@ public final class GestorIncidencias {
     /**
      * Metodo que devuelve la lista de incidencias abiertas
      * <p>Usa un stream para devolver las incidencias abiertas</p>
-     * @return incidencias abiertas
+     * @return Incidencias abiertas
      */
     public List<Incidencia> listarAbiertas() {
         return incidencias.stream()
@@ -47,8 +47,8 @@ public final class GestorIncidencias {
      * Metodo que devuelve la lista que coincide con el texto pasado por parametro
      * <p>Usa un stream para comprobar cada incidencia con un metodo{@link Incidencia#coincideCon(String)}</p>
      * @see Incidencia#coincideCon(String)
-     * @param texto para la busqueda
-     * @return las incidencias que cumplen con la condicion
+     * @param texto Usado la busqueda
+     * @return Las incidencias que cumplen con la condicion
      */
     public List<Incidencia> buscar(String texto) {
         return incidencias.stream()
@@ -59,8 +59,8 @@ public final class GestorIncidencias {
     /**
      * Metodo que devuelve la Incidencia que contiene la id pasada por parametro
      * <p>El metodo no es case sensitive</p>
-     * @param id para la busqueda
-     * @return incidencia buscada o excepcion
+     * @param id Usado en la busqueda
+     * @return Incidencia buscada o excepcion
      * @throws IncidenciaNoEncontradaException cuando no existe ninguna
      */
     public Incidencia buscarPorId(String id) throws IncidenciaNoEncontradaException {
@@ -73,8 +73,8 @@ public final class GestorIncidencias {
     /**
      * Metodo que devuelve la incidencia que contiene la id pasada por parametro
      *
-     * @param id para la busqueda
-     * @return incidencia si existe o {@code null} si no
+     * @param id Usado en la busqueda
+     * @return Incidencia si existe o {@code null} si no
      * @deprecated Queda en desuso, utilizar {@link #buscarPorId(String)} en su lugar
      */
     @Deprecated(since = "1.0.0", forRemoval = false)

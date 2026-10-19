@@ -43,7 +43,7 @@ public final class Incidencia {
         return titulo;
     }
 
-    /**ç
+    /**
      * Devuelve la prioridad de la incidencia
      * @return prioridad de la incidencia
      */
@@ -65,8 +65,8 @@ public final class Incidencia {
      * <p>El metodo compara tanto en id como en titulo</p>
      * <p>El metodo no es case-sensitive</p>
      *
-     * @param texto para la busqueda
-     * @return si el id o el titulo cumplen el criterio
+     * @param texto usado en la busqueda
+     * @return True si el id o el titulo cumplen el criterio
      */
     public boolean coincideCon(String texto) {
         String criterio = texto.toLowerCase(Locale.ROOT);
