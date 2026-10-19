@@ -21,6 +21,19 @@ o con el wrapper de maven
 ```bash
 .\mvnw.cmd clean compile exec:java
 ```
+
+## Generación de la API
+Con el wrapper de maven
+```bash
+.\mvnw.cmd javadoc:javadoc
+```
+## Clases
+
+| Clase | Responsabilidad |
+| --- | --- |
+| Incidencia | Guarda los datos de la incidencia, para ello se guarda un id, titulo, prioridad y si esta abierta o no |
+| GestorIncidencias | Guardar las incidencias, y implementa metodos de busqueda y filtrado |
+
 ## Documentación de la API
 
 Consulta las instrucciones de generación en `docs/index.html` o [documentacion](https://hpallas.github.io/GestorIncidencias_DAW_2627/).
